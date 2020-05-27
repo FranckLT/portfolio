@@ -52,3 +52,26 @@ header .overlay {
         display: none;
     }
 }
+/* My services */
+
+
+#services
+{
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+
+h2{
+    color: goldenrod;
+    text-align: center;
+   
+}
+h3{
+   color: silver;
+   text-align: center;
+}
+.card{
+   background-color: black;
+   color: black; 
+}
+
