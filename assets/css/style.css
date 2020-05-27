@@ -40,9 +40,25 @@ header .overlay {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        background: url('https://images.unsplash.com/photo-1589822722100-ddd20673cb81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1524&q=80') black no-repeat center center scroll;
     }
     header video {
         display: none;
     }
 }
+
+.services {
+    height: 500px;
+    background-color: #0b0b0b;
+}
+
+.about {
+    background-color: #0b0b0b;
+}
+
+.about img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
