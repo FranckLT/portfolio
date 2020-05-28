@@ -2,7 +2,9 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-
+html .titleCustom {
+    border-bottom: 2px solid lightgreen;
+}
 
 /* NavBar Section */
 
@@ -11,8 +13,7 @@ html {
     margin-bottom: 10px;
 }
 
-
-
+/* Header section with video */
 
 header {
     position: relative;
@@ -31,7 +32,7 @@ header video {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: 0;
+    z-index: 1;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -40,7 +41,7 @@ header video {
 
 header .container {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 header .overlay {
@@ -51,7 +52,7 @@ header .overlay {
     width: 100%;
     background-color: darkgrey;
     opacity: 0.5;
-    z-index: 1;
+    z-index: 2;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -63,12 +64,20 @@ header .overlay {
     }
 }
 
-/* Services Section */
-
-.services {
-    height: 500px;
-    background-color: #0b0b0b;
+#videoPres p {
+    background: -webkit-linear-gradient(#fff, lightgreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+/* Services Section */
+.servicesItem {
+    transition: all .2s ease-in-out;
+}
+.servicesItem:hover {
+    transform: rotate(2deg) scale(1.1);
+}
+
 
 /* AboutMe Section */
 
@@ -78,34 +87,16 @@ header .overlay {
     height: auto;
 }
 
-.bigButton:hover {
-    color: orange;
-    text-decoration: none;
-    font-size: larger;
-}
-
-.bigButton {
-    text-decoration: underline;
-    font-size: x-large;
-}
-
-.cvDownloadButton {
-    font-size: x-large;
-}
-
 .aboutMeTextArea {
-    border: 1px solid grey;
+    border: 1px solid lightgreen;
 }
 
-#aboutMe{
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+.lightgreenIcon {
+    color: lightgreen;
 }
 
 /* Portfolio Section */
-
-#portfolio {
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
 
 .projects-section {
     padding: 5rem 0;
@@ -116,7 +107,7 @@ header .overlay {
 @media (min-width: 992px) {
     .projects-section .featured-text {
         padding: 0 0 0 2rem;
-        border-left: 0.5rem solid #64a19d;
+        border-left: 0.5rem solid lightgreen;
     }
 }
 .projects-section .project-text {
@@ -134,8 +125,16 @@ header .overlay {
     }
 }
 
+.biggerOnHover {
+    transition: all .2s ease-in-out;
+}
+.biggerOnHover:hover {
+    transform: scale(1.1);
+}
+
+
 /* Contact Section */
 
-#contact {
-
+#contact #submitButton{
+    background-color: lightgreen;
 }

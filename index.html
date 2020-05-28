@@ -18,15 +18,17 @@
     <!-- Google Fonts Roboto -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/mdb/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/material/css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
-    <link rel="stylesheet" href="assets/mdb/css/mdb.css">
+    <link rel="stylesheet" href="assets/material/css/mdb.css">
 
 
 </head>
 <body>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white static-top" id="navbar">
+
+<!-- Navbar -->
+<!-- Fixed Top = fixe le menu en haut de la page -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white static-top fixed-top" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="#">
             <h2>Renaud</h2>
@@ -42,10 +44,10 @@
                     <a class="nav-link" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#aboutMe">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutMe">About</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -60,7 +62,7 @@
 <!--************ Pres + Header video ************************************************************************-->
 <!--*********************************************************************************************************-->
 
-<header class="mb-3" id="videoPres">
+<header class="mb-5" id="videoPres">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="assets/photo/Arrival_4K_Motion_Background_Loop.mp4" type="video/mp4">
@@ -83,8 +85,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -94,38 +94,82 @@
 <!--************ Services ***********************************************************************************-->
 <!--*********************************************************************************************************-->
 
-<div class="services mb-3" id="services">
-
-
+<div class="services pt-5" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="h1-responsive text-center my-4 titleCustom">MY SERVICES</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section id="articlesServices" class="row">
+            <article id="webDesign" class="col-lg-4 col-md-12 mb-3 servicesItem">
+                <div class="card">
+                    <img class="card-img-top " src="assets/photo/photo1.jpeg" alt="Card image cap">
+                    <div class="row mt-2">
+                        <h3 class="text-center col-12">Web Design</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+            </article>
+            <article id="Photography" class="col-lg-4 col-md-12 mb-3 servicesItem">
+                <div class="card">
+                    <img class="card-img-top" src="assets/photo/photo1.jpeg" alt="Card image cap">
+                    <div class="row mt-2">
+                        <h3 class="text-center col-12">Photography</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+            </article>
+            <article id="videoEdding" class="col-lg-4 col-md-12 mb-3 servicesItem">
+                <div class="card">
+                    <img class="card-img-top" src="assets/photo/photo1.jpeg" alt="Card image cap">
+                    <div class="row mt-2">
+                        <h3 class="text-center col-12">Video Edding</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
 </div>
 
 <!--*********************************************************************************************************-->
 <!--************ About me ***********************************************************************************-->
 <!--*********************************************************************************************************-->
 
-<div class="about mb-3" id="aboutMe">
+<div class="about pt-5" id="aboutMe">
     <div class="container p-3">
+        <!-- ##### Header Row ##### -->
         <div class="row">
             <div class="col-12">
-                <h1 class="h1-responsive font-weight-bold text-center my-4">ABOUT ME</h1>
+                <h1 class="h1-responsive text-center my-4 titleCustom">ABOUT ME</h1>
             </div>
         </div>
 
-        <div class="row">
+        <!-- ##### Content Row ##### -->
+        <div class="row mb-md-4">
+            <!-- First col -->
             <div class="col-lg-4 col-md-12">
-
                 <div class="text-div text-white">
-
-                    <img class="rounded" src="assets/photo/jason.jpg">
-
+                    <img class="rounded mb-md-4 mb-sm-4" src="assets/photo/jason.jpg">
                 </div>
-
             </div>
             <!-- SPACER -->
             <div class="col-lg-1 col-md-12"></div>
-
-
+            <!-- Second col -->
             <div class="col-lg-7 col-md-12">
+                <!-- Text presentation area -->
                 <div class="row">
                     <div class="col-12 text-black-50 p-5 aboutMeTextArea shadow">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae consectetur
@@ -136,19 +180,20 @@
                             ut! </p>
                     </div>
                 </div>
+                <!-- 3 buttons row -->
                 <div class="row">
                     <div class="col-12 text-center">
                         <a id="emailButton" class="col-2 text-black-50" type="button" data-toggle="collapse"
                            data-target="#emailCollapse" aria-expanded="false">
-                            <i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <i class="fas fa-envelope mt-4 fa-2x lightgreenIcon"></i>
                         </a>
                         <a id="numberButton" class="col-2 text-black-50" type="button" data-toggle="collapse"
                            data-target="#numberCollapse" aria-expanded="false">
-                            <i class="fas fa-phone mt-4 fa-2x"></i>
+                            <i class="fas fa-phone mt-4 fa-2x lightgreenIcon"></i>
                         </a>
                         <a id="twitterButton" class="col-2 text-black-50" type="button" data-toggle="collapse"
                            data-target="#twitterCollapse" aria-expanded="false">
-                            <i class="fab fa-twitter mt-4 fa-2x"></i>
+                            <i class="fab fa-twitter mt-4 fa-2x lightgreenIcon"></i>
                         </a>
                         <div class="collapse" id="emailCollapse">
                             <div class="card card-body">
@@ -167,13 +212,15 @@
                         </div>
                     </div>
                 </div>
+                <!-- Download button row -->
                 <div class="row mt-4">
-                    <div class="col-lg-3"></div>
+                    <!-- Spacer -->
+                    <div class="col-3"></div>
                     <div class="col-6 text-center">
-                        <a class="btn btn-outline-default animated swing infinite m-2" href="assets/photo/jason.jpg"
-                           download>Download Cv</a>
+                        <a class="btn animated swing infinite m-2 btn-outline-success waves-effect" href="assets/photo/jason.jpg" download>Download Cv</a>
                     </div>
-                    <div class="col-lg-3"></div>
+                    <!-- Spacer -->
+                    <div class="col-3"></div>
                 </div>
             </div>
         </div>
@@ -184,16 +231,17 @@
 <!--************ Portfolio ***********************************************************************************-->
 <!--*********************************************************************************************************-->
 
-<div class="portfolio" id="portfolio">
+<div class="portfolio pt-5" id="portfolio">
     <section class="projects-section" id="projects">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
-                    <h1 class="h1-responsive font-weight-bold text-center">PORTFOLIO</h1>
+                    <h1 class="h1-responsive text-center titleCustom">PORTFOLIO</h1>
                 </div>
             </div>
             <!-- Project One Row-->
-            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+            <a class="row justify-content-center no-gutters biggerOnHover" id="portfolioFirstRow"
+               href="https://www.google.com">
                 <div class="col-lg-6"><img class="img-fluid" src="assets/photo/portfolio-img-1.jpg" alt=""></div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
@@ -207,9 +255,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <!-- Project Two Row-->
-            <div class="row justify-content-center no-gutters">
+            <a class="row justify-content-center no-gutters biggerOnHover" id="portfolioSecondRow" href="https://www.google.com">
                 <div class="col-lg-6"><img class="img-fluid" src="assets/photo/portfolio-img-2.jpg" alt=""></div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">
@@ -219,62 +267,46 @@
                                 <p class="mb-0 text-black-50">Another example of a project with its respective
                                     description. These sections work well responsively as well, try this theme on a
                                     small screen!</p>
-                                <hr class="d-none d-lg-block mb-0 mr-0">
+                                <hr class="d-none d-lg-block mb-0 mr-0 separator">
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
-</section>
+    </section>
 </div>
 
 <!--*********************************************************************************************************-->
 <!--************ Contact ***********************************************************************************-->
 <!--*********************************************************************************************************-->
 
-<div class="contact" id="contact">
+<div class="contact pt-5" id="contact">
     <div class="container">
-        <!--Section: Contact v.2-->
         <section class="mb-4">
-
-            <!--Section heading-->
-            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
-            <!--Section description-->
+            <h2 class="h1-responsive text-center my-4 titleCustom">CONTACT ME</h2>
             <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
                 contact me directly.</p>
-
             <div class="row">
-
-                <!--Grid column-->
                 <div class="col-md-12 mb-md-0 mb-5">
+                    <!-- ##### Form ##### -->
+                    <!-- onsubmit="return false" = avoid original form behaviour -->
+                    <!-- original behaviour = change page on submit event -->
                     <form id="contact-form" name="contact-form" onsubmit="return false" method="POST">
-
-                        <!--Grid row-->
                         <div class="row">
-
-                            <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="name" name="name" class="form-control" required>
                                     <label for="name" class="">Your name</label>
                                 </div>
                             </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
                             <div class="col-md-6">
                                 <div class="md-form mb-0">
                                     <input type="text" id="email" name="email" class="form-control" required>
                                     <label for="email" class="">Your email</label>
                                 </div>
                             </div>
-                            <!--Grid column-->
-
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="md-form mb-0">
@@ -283,14 +315,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!--Grid row-->
-
-                        <!--Grid row-->
                         <div class="row">
-
-                            <!--Grid column-->
                             <div class="col-md-12">
-
                                 <div class="md-form">
                                     <textarea type="text" id="message" name="message" rows="2"
                                               class="form-control md-textarea" required></textarea>
@@ -299,20 +325,14 @@
 
                             </div>
                         </div>
-                        <!--Grid row-->
-
                     </form>
-
                     <div class="text-center btn-block">
-                        <a class="btn btn-primary" onclick="sendData();">Send</a>
+                        <!-- Call sendData() function in form.js file -->
+                        <a class="btn" id="submitButton" onclick="sendData();">Send</a>
                     </div>
-                    <div class="status"></div>
                 </div>
-
             </div>
-
         </section>
-        <!--Section: Contact v.2-->
     </div>
 </div>
 
@@ -345,13 +365,13 @@
 <!--*********************************************************************************************************-->
 
 <!-- jQuery -->
-<script type="text/javascript" src="assets/mdb/js/jquery.js"></script>
+<script type="text/javascript" src="assets/material/js/jquery.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="assets/mdb/js/popper.js"></script>
+<script type="text/javascript" src="assets/material/js/popper.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="assets/mdb/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/material/js/bootstrap.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="assets/mdb/js/mdb.js"></script>
+<script type="text/javascript" src="assets/material/js/mdb.js"></script>
 <!-- Form -->
 <script type="text/javascript" src="assets/js/form.js"></script>
 
