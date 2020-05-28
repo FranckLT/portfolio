@@ -5,56 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Renaud</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <!-- CSS Custom -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/js/bootstrap.js">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/mdb/css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="assets/mdb/css/mdb.css">
+
+
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white static-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white static-top" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="#">
             <h2>Renaud</h2>
         </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                    <span class="sr-only">(current)</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
 
 <!--*********************************************************************************************************-->
-<!--************ Content ************************************************************************************-->
-<!--*********************************************************************************************************-->
-
-<!--*********************************************************************************************************-->
 <!--************ Pres + Header video ************************************************************************-->
 <!--*********************************************************************************************************-->
-<!-- Outside of container for width 100% -->
 
-<header class="mb-3">
+<header class="mb-3" id="videoPres">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
         <source src="assets/photo/Arrival_4K_Motion_Background_Loop.mp4" type="video/mp4">
@@ -64,7 +70,7 @@
             <div class="w-100 text-white">
                 <h3 class="display-1">My name is Renaud</h3>
                 <h6 class="display-2">I work as </h6>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <p class="display-4">IT Ingenier</p>
@@ -84,21 +90,24 @@
     </div>
 </header>
 
+<!--*********************************************************************************************************-->
+<!--************ Services ***********************************************************************************-->
+<!--*********************************************************************************************************-->
 
-<div class="services mb-3">
+<div class="services mb-3" id="services">
 
 
 </div>
 
 <!--*********************************************************************************************************-->
-<!--************ About me ************************************************************************-->
+<!--************ About me ***********************************************************************************-->
 <!--*********************************************************************************************************-->
 
-<div class="about mb-3">
-    <div class="container">
+<div class="about mb-3" id="aboutMe">
+    <div class="container p-3">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-white text-center my-3">ABOUT ME</h1>
+                <h1 class="h1-responsive font-weight-bold text-center my-4">ABOUT ME</h1>
             </div>
         </div>
 
@@ -118,27 +127,29 @@
 
             <div class="col-lg-7 col-md-12">
                 <div class="row">
-                    <div class="col-12 text-white p-5">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae consectetur delectus deserunt dolor ex excepturi, expedita fuga incidunt iste labore molestiae nemo qui quis repellat reprehenderit sapiente velit? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium deleniti doloremque officiis quisquam. Aliquid aperiam eaque nam nulla recusandae similique sit, voluptatum! Amet culpa cumque harum ipsa laborum omnis, ut! </p>
+                    <div class="col-12 text-black-50 p-5 aboutMeTextArea shadow">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam beatae consectetur
+                            delectus deserunt dolor ex excepturi, expedita fuga incidunt iste labore molestiae nemo qui
+                            quis repellat reprehenderit sapiente velit? Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Accusantium deleniti doloremque officiis quisquam. Aliquid aperiam eaque
+                            nam nulla recusandae similique sit, voluptatum! Amet culpa cumque harum ipsa laborum omnis,
+                            ut! </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p>
-                            <button class="big-button col-2" type="button" data-toggle="collapse" data-target="#nameCollapse" aria-expanded="false" aria-controls="collapseExample">Name
-                            </button>
-                            <button class="big-button col-2" type="button" data-toggle="collapse" data-target="#emailCollapse" aria-expanded="false" aria-controls="collapseExample">Email
-                            </button>
-                            <button class="big-button col-2" type="button" data-toggle="collapse" data-target="#numberCollapse" aria-expanded="false" aria-controls="collapseExample">Number
-                            </button>
-                            <button class="big-button col-2" type="button" data-toggle="collapse" data-target="#twitterCollapse" aria-expanded="false" aria-controls="collapseExample">Twitter
-                            </button>
-                        </p>
-                        <div class="collapse" id="nameCollapse">
-                            <div class="card card-body">
-                                Renaud
-                            </div>
-                        </div>
+                        <a id="emailButton" class="col-2 text-black-50" type="button" data-toggle="collapse"
+                           data-target="#emailCollapse" aria-expanded="false">
+                            <i class="fas fa-envelope mt-4 fa-2x"></i>
+                        </a>
+                        <a id="numberButton" class="col-2 text-black-50" type="button" data-toggle="collapse"
+                           data-target="#numberCollapse" aria-expanded="false">
+                            <i class="fas fa-phone mt-4 fa-2x"></i>
+                        </a>
+                        <a id="twitterButton" class="col-2 text-black-50" type="button" data-toggle="collapse"
+                           data-target="#twitterCollapse" aria-expanded="false">
+                            <i class="fab fa-twitter mt-4 fa-2x"></i>
+                        </a>
                         <div class="collapse" id="emailCollapse">
                             <div class="card card-body">
                                 renaud@gmail.com
@@ -156,24 +167,193 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-4">
+                    <div class="col-lg-3"></div>
+                    <div class="col-6 text-center">
+                        <a class="btn btn-outline-default animated swing infinite m-2" href="assets/photo/jason.jpg"
+                           download>Download Cv</a>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--*********************************************************************************************************-->
+<!--************ Portfolio ***********************************************************************************-->
+<!--*********************************************************************************************************-->
+
+<div class="portfolio" id="portfolio">
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="h1-responsive font-weight-bold text-center">PORTFOLIO</h1>
+                </div>
+            </div>
+            <!-- Project One Row-->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/photo/portfolio-img-1.jpg" alt=""></div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-black-50">Project 1</h4>
+                                <p class="mb-0 text-black-50">An example of where you can put an image of a project, or
+                                    anything else, along with a description.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/photo/portfolio-img-2.jpg" alt=""></div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-black-50">Project 2</h4>
+                                <p class="mb-0 text-black-50">Another example of a project with its respective
+                                    description. These sections work well responsively as well, try this theme on a
+                                    small screen!</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+</div>
+
+<!--*********************************************************************************************************-->
+<!--************ Contact ***********************************************************************************-->
+<!--*********************************************************************************************************-->
+
+<div class="contact" id="contact">
+    <div class="container">
+        <!--Section: Contact v.2-->
+        <section class="mb-4">
+
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
+                contact me directly.</p>
+
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-12 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" onsubmit="return false" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control" required>
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control" required>
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                              class="form-control md-textarea" required></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                    </form>
+
+                    <div class="text-center btn-block">
+                        <a class="btn btn-primary" onclick="sendData();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+
             </div>
 
+        </section>
+        <!--Section: Contact v.2-->
+    </div>
+</div>
+
+<!--*********************************************************************************************************-->
+<!--************ Footer *************************************************************************************-->
+<!--*********************************************************************************************************-->
+
+<div class="shadow-lg bg-white static pt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <p>© 2020 Renaud, All Rights Reserved</p>
+            </div>
+
+            <div class="col-1"></div>
+
+            <div class="col-1">
+                <a href="#navbar"
+                   class="ts-circle__xs rounded-0 bg-white position-absolute ts-right__0 ts-top__0 ts-push-up__50 ts-scroll">
+                    <i class="fa fa-arrow-up text-black-50"></i>
+                </a>
+            </div>
 
         </div>
     </div>
 </div>
 
+<!--*********************************************************************************************************-->
+<!--************ Import ***********************************************************************************-->
+<!--*********************************************************************************************************-->
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<!-- jQuery -->
+<script type="text/javascript" src="assets/mdb/js/jquery.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="assets/mdb/js/popper.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="assets/mdb/js/bootstrap.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="assets/mdb/js/mdb.js"></script>
+<!-- Form -->
+<script type="text/javascript" src="assets/js/form.js"></script>
 
 </body>
 </html>

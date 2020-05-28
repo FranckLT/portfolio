@@ -1,3 +1,19 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* NavBar Section */
+
+#navbar {
+    border-bottom: 2px solid lightgreen;
+    margin-bottom: 10px;
+}
+
+
+
+
 header {
     position: relative;
     background-color: black;
@@ -47,14 +63,14 @@ header .overlay {
     }
 }
 
+/* Services Section */
+
 .services {
     height: 500px;
     background-color: #0b0b0b;
 }
 
-.about {
-    background-color: #0b0b0b;
-}
+/* AboutMe Section */
 
 .about img {
     display: block;
@@ -62,3 +78,64 @@ header .overlay {
     height: auto;
 }
 
+.bigButton:hover {
+    color: orange;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.bigButton {
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.cvDownloadButton {
+    font-size: x-large;
+}
+
+.aboutMeTextArea {
+    border: 1px solid grey;
+}
+
+#aboutMe{
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Section */
+
+#portfolio {
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projects-section {
+    padding: 5rem 0;
+}
+.projects-section .featured-text {
+    padding: 2rem;
+}
+@media (min-width: 992px) {
+    .projects-section .featured-text {
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+    }
+}
+.projects-section .project-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+@media (min-width: 992px) {
+    .projects-section .project-text {
+        padding: 5rem;
+    }
+    .projects-section .project-text hr {
+        border-color: #64a19d;
+        border-width: 0.25rem;
+        width: 30%;
+    }
+}
+
+/* Contact Section */
+
+#contact {
+
+}
